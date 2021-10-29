@@ -1,0 +1,136 @@
+{
+  "pizzas": [
+    {
+      "id": 1,
+      "img": "https://media.istockphoto.com/photos/cheesy-pepperoni-pizza-picture-id938742222?k=6&m=938742222&s=612x612&w=0&h=on_9ZYG1SG4Xgk7BLZSlaXJl8VYb6ZePDHTN6zukDHM=",
+      "name": "Піца 4 сезона 30 см",
+      "description": "соус томатний, сир моцарелла, тунець, каперси, шинка, шампіньйони, куряче філе, грудинка копчена, салямі, помідори",
+      "price": "157"
+    },
+    {
+      "id": 2,
+      "img": "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80",
+      "name": "Мама піца 50 см",
+      "description": "соус томатний, моцарелла, салямі, шампіньйони, помідори, цибуля, креветки, перець болг",
+      "price": "157"
+    },
+    {
+      "id": 3,
+      "img": "https://media.istockphoto.com/photos/tasty-pepperoni-pizza-and-cooking-ingredients-tomatoes-basil-on-black-picture-id1083487948?k=6&m=1083487948&s=612x612&w=0&h=lK-mtDHXA4aQecZlU-KJuAlN9Yjgn3vmV2zz5MMN7e4=",
+      "name": "Піца 4 сезона 50 см",
+      "description": "соус томатний, сир моцарелла, тунець, каперси, шинка, шампіньйони, куряче філе, грудинка копчена, салямі, помідори",
+      "price": "190"
+    },
+    {
+      "id": 4,
+      "img": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTJ8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80",
+      "name": "Піца Туна 50 см",
+      "description": "соус томатний, сир моцарела, тунець, каперси, цибуля",
+      "price": "186"
+    },
+    {
+      "id": 5,
+      "img": "https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&w=1000&q=80",
+      "name": "Піца Цезар 50 см",
+      "description": "соус томатний, сир моцарелла, тунець, каперси, шинка, шампіньйони, куряче філе, грудинка копчена, салямі, помідори",
+      "price": "171"
+    },
+    {
+      "id": 6,
+      "img": "https://media.istockphoto.com/photos/picking-slice-of-pepperoni-pizza-picture-id1133727757?k=6&m=1133727757&s=612x612&w=0&h=6wLUhTKLTudlkgLXQxdOZIVr6D9zuIcMJhpgTVmOWMo=",
+      "name": "Піца Пармська 50 см",
+      "description": "соус томатний, сир моцарела, тунець, каперси, цибуля",
+      "price": "157"
+    },
+    {
+      "id": 7,
+      "img": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80",
+      "name": "Піца 4 сезона 30 см",
+      "description": "соус томатний, сир моцарелла, тунець, каперси, шинка, шампіньйони, куряче філе, грудинка копчена, салямі, помідори",
+      "price": "157"
+    },
+    {
+      "id": 8,
+      "img": "https://st2.depositphotos.com/1692343/5636/i/950/depositphotos_56360353-stock-photo-hot-homemade-pepperoni-pizza.jpg",
+      "name": "Папа піца 30 см",
+      "description": "соус томатний, моцарела, шампіньйони, помідори, цибуля, перець болгарський, оливки",
+      "price": "157"
+    },
+    {
+      "id": 9,
+      "img": "https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjR8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80",
+      "name": "Піца 4 сезона 30 см",
+      "description": "соус томатний, сир моцарелла, тунець, каперси, шинка, шампіньйони, куряче філе, грудинка копчена, салямі, помідори",
+      "price": "157"
+    }
+  ],
+  "drinks": [
+    {
+      "id": 1,
+      "img": "https://ris.od.ua/wp-content/uploads/kola.jpg",
+      "name": "Кока кола",
+      "description": "газований безалкогольний прохолоджувальний напій",
+      "price": "24"
+    },
+    {
+      "id": 2,
+      "img": "https://www.unipack.ru/light_editor_img/images/2019-9-18/file1568714166.jpg",
+      "name": "Сік Сандора",
+      "description": "негазований безалкогольний прохолоджувальний напій",
+      "price": "34"
+    },
+    {
+      "id": 3,
+      "img": "https://obaldini.com.ua/image/cache/catalog/napitki/sprite05-800x533.jpg",
+      "name": "Спрайт",
+      "description": "газований безалкогольний напій",
+      "price": "16"
+    }
+  ],
+  "burgers": [
+    {
+      "id": 1,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/RedDot_Burger.jpg/1200px-RedDot_Burger.jpg",
+      "name": "Chicken-cheese",
+      "description": "Біфштекс курячий, сир тостерний, айсберг, помідор, огірок маринований, цибуля",
+      "price": "135"
+    },
+    {
+      "id": 2,
+      "img": "https://assets.bonappetit.com/photos/5b919cb83d923e31d08fed17/16:9/w_4992,h_2808,c_limit/basically-burger-1.jpg",
+      "name": "Baza-burger",
+      "description": "Біфштекс курячий, помідор, айсберг, огірок маринований, бекон, пармезан",
+      "price": "155"
+    },
+    {
+      "id": 3,
+      "img": "https://www.thespruceeats.com/thmb/XO45nn2PpC7dFQO5A8-Q8_hUY5Q=/4048x2696/filters:fill(auto,1)/juicy-baked-burgers-3052097-hero-01-c9e134a9f357424c8bd6fc67149ad4c0.jpg",
+      "name": "Cheeseburger",
+      "description": "Біфштекс телячий, сир тостерний, айсберг, помідор, огірок маринований, цибуля",
+      "price": "111"
+    },
+    {
+      "id": 4,
+      "img": "http://embed.widencdn.net/img/beef/sr17je3ewf/exact/thai-burger-horizontal.tif?keep=c&u=7fueml",
+      "name": "Бик-burger",
+      "description": "Біфштекс телячий, сир тостерний, айсберг, бекон, помідор, огірок маринований, цибуля, яйце куряче",
+      "price": "124"
+    }
+  ],
+  "sushi": [
+    {
+      "id": 1,
+      "img": "https://client-api.sushi-master.ua/pics/60b935d29bf1fa74acf9ba80?width=480",
+      "name": "Рол Філадельфія з лососем",
+      "description": "Норі, рис, авокадо, сир Філадельфія, лосось слабо-солений.",
+      "price": "160"
+    },
+    {
+      "id": 2,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKJDF5YAdEr4EEXoPFqO2Z0v2RoY2BgURyWYrbjNBKiG0ZVtucIVPSIjTMGSb6_wdGttM&usqp=CAU",
+      "name": "Рол Каліфорнія з вугрем",
+      "description": "Норі, рис, авокадо, огірок, кунжут білий, вугор, соус Унагі.",
+      "price": "145"
+    }
+  ]
+}

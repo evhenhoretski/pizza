@@ -53,7 +53,7 @@ export default class Header extends Component {
                 <Router>
                     <Switch>
                         <Route exact path="/" component={Home} />
-                        <Route exact path="/about" component={Menu} />
+                        <Route exact path="/menu" component={Menu} />
                         <Route exact path="/contacts" component={Contacts} />
                         <Route exact path="/blog" component={Blog} />
                     </Switch>
