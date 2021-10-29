@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 import {
   Card, Button
 } from 'react-bootstrap'
@@ -6,6 +7,7 @@ import {
 const MenuItem = ({ item, onClick }) => {
   const handleClick = () => {
     onClick(item);
+    toast.success(`${item.name} was added to cart!`)
   };
 
   return (
