@@ -37,14 +37,14 @@ const Menu = () => {
                         <Tab.Content className="mt-3">
                             {categories.map(item => (
                                  <Tab.Pane eventKey={item}>
-                                 <Container className="1">
-                                     <h2 className="text-center m-4">{item}</h2>
-                                    <div className="flex">
-                                        {data[item].map(product => (
-                                            <MenuItem item={product} onClick={handleAddToCart}/>
-                                        ))}
-                                    </div>
-                                 </Container>
+                                     <Container className="1">
+                                         <h2 className="text-center m-4">{item}</h2>
+                                        <div className="flex">
+                                            {data[item].map(product => (
+                                                <MenuItem item={product} onClick={handleAddToCart}/>
+                                            ))}
+                                        </div>
+                                     </Container>
                              </Tab.Pane>
                             ))}
                         </Tab.Content>

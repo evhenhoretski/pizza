@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import {Nav, Row, Col} from 'react-bootstrap';
-import CartItem from '../Components/CartItem';
+
+import {useSelector} from 'react-redux';
+import {Nav, Row, Col, Card, Tab, Container} from 'react-bootstrap';
+import CartItem from '../../Components/CartItem';
 
 
 const Cart = () => {
@@ -14,31 +16,26 @@ const Cart = () => {
       {cartItems.map((item) => (
         <div key={item.id}>
           {/* виведи тут компоненту карт айтема */}
-            <Row>
-                <Col sm={3}>
-                    <Nav className="mr-3" >
-                        <Card className="mt-4 mb-4 flexItem">
-                            <Card.Img
-                                variant="top"
-                                src={item.img}
-                            />
-                            <Card.Body>
-                                <Card.Title>{item.name}</Card.Title>
-                                <Card.Text>
-                                    {item.price}
-                                </Card.Text>
-                                {cartItems.map(item => (
-                                    <CartItem item={item}/>
-                                ))}
-                            </Card.Body>
-                        </Card>
-                    </Nav>
-                </Col>
-            </Row>
+            <Container>
+                <Tab.Container id="left-tabs-example">
+                    <Row>
+                        <Col sm={5}>
+                            <Tab.Content className="mt-3">
+                                <Container className="1">
+                                    <div className="flex">
+                                        {cartItems.map(item => (
+                                            <CartItem item={item}/>
+                                        ))}
+                                    </div>
+                                </Container>
+                            </Tab.Content>
+                        </Col>
+                    </Row>
+                </Tab.Container>
+            </Container>
           {/*{item.name}*/}
         </div>
       ))}
-
       Total - {totalPrice}
     </>
   )
