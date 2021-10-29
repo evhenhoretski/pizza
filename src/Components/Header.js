@@ -14,6 +14,7 @@ import Home from'../Pages/Home'
 import Menu from '../Pages/Menu'
 import Contacts from'../Pages/Contacts'
 import Blog from'../Pages/Blog'
+import Cart from'../Pages/Cart'
 
 export default class Header extends Component {
     render() {
@@ -54,6 +55,7 @@ export default class Header extends Component {
                     <Switch>
                         <Route exact path="/" component={Home} />
                         <Route exact path="/menu" component={Menu} />
+                        <Route exact path="/cart" component={Cart} />
                         <Route exact path="/contacts" component={Contacts} />
                         <Route exact path="/blog" component={Blog} />
                     </Switch>
