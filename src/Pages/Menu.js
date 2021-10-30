@@ -4,6 +4,7 @@ import { addToCart } from './Cart/actions/cart.actions';
 import {
   Container, Tab, Nav, Row, Col
 } from 'react-bootstrap';
+import NavDropdown from 'react-bootstrap/NavDropdown'
 import MenuItem from '../Components/MenuItem';
 
 import data from '../data.json';
@@ -20,10 +21,10 @@ const Menu = () => {
             <Tab.Container id="left-tabs-example" defaultActiveKey={categoryActive}>
                 <Row>
                     <Col sm={3}>
-                        <Nav variant="pills" className="flex-column mt-2">
+                        <Nav variant="pills" className="flex-column mt-2" >
                             {categories.map(item => (
                              <Nav.Item key={item}>
-                                <Nav.Link 
+                                <Nav.Link
                                     eventKey={item}
                                     onClick={() => setCategoryActive(item)}
                                 >
