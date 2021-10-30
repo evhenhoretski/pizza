@@ -44,6 +44,50 @@
   justify-content: space-between;
 }
 
+.flex-start {
+  justify-content: flex-start;
+}
+
 .flexItem {
   flex: 0 1 49%;
+}
+
+.flex-right {
+  justify-content: flex-end;
+}
+
+.header {
+  background-color: #341313;
+}
+
+.header-link {
+  color: white !important;
+  margin: 0 20px !important;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  color: #d9cba2 !important;
+}
+
+.header-link-active {
+  color: #d9cba2 !important;
+}
+
+.logo {
+  font-size: 28px;
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.flex-25 {
+  flex: 0 1 23%;
+  margin: 1%;
 }

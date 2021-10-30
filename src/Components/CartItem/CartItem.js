@@ -4,7 +4,7 @@ import { Card } from 'react-bootstrap'
 const CartItem = ({ item }) => {
 
     return (
-        <Card className="mt-4 mb-4 flexItem">
+        <Card className="mt-4 mb-4 flex-25">
             <Card.Img
                 variant="top"
                 src={item.img}

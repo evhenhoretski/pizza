@@ -2,6 +2,7 @@ import {
   ADD_QUANTITY,
   ADD_TO_CART,
   REMOVE_FROM_CART,
+  RESET_CART,
   SUB_QUANTITY
 } from '../actionTypes/cart.actionTypes';
 
@@ -72,6 +73,8 @@ const cartReducer = (state = initState, action) => {
     localStorage.setItem('cartItems', JSON.stringify(newState))
     return newState;
   }
+  case RESET_CART:
+    return initState;
   case SUB_QUANTITY: {
     const newItems = state.items.map(item => item.id === action.item.id ? {
       ...item,

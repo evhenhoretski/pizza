@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';
 import { Modal, Button, Form, Row, Col } from 'react-bootstrap';
+import { resetCart } from '../../Pages/Cart/actions/cart.actions';
 
 const OrderModal = ({ onClose, show }) => {
+  const dispatch = useDispatch();
+  const history = useHistory();
   const [values, setValues] = useState({
     name: '',
     phone: '',
@@ -24,7 +29,9 @@ const OrderModal = ({ onClose, show }) => {
       return;
     }
     toast.success('Thank you! Manager will contact with you soon:)');
+    dispatch(resetCart());
     onClose();
+    history.push('/menu');
   }
 
   return (

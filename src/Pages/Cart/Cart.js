@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { useSelector } from 'react-redux';
-import { Row, Col, Tab, Container, Button } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
 import CartItem from '../../Components/CartItem';
 import OrderModal from '../../Components/OrderModal';
 
@@ -14,36 +14,25 @@ const Cart = () => {
   const cartItems = useSelector(state => state.cartItems.items);
   const totalPrice = useSelector(state => state.cartItems.total);
   return (
-    <>
+    <Container>
       <div className="mb-4 ">
         Cart
       </div>
-      {cartItems.map((item) => (
-        <div key={item.id}>
-          {/* виведи тут компоненту карт айтема */}
-            <Container>
-                <Tab.Container id="left-tabs-example">
-                    <Row>
-                        <Col sm={5}>
-                            <Tab.Content className="mt-3">
-                                <Container className="1">
-                                    <div className="flex">
-                                        {cartItems.map(item => (
-                                            <CartItem item={item}/>
-                                        ))}
-                                    </div>
-                                </Container>
-                            </Tab.Content>
-                        </Col>
-                    </Row>
-                </Tab.Container>
-            </Container>      
+      {!cartItems.length && <p>Sorrt, your cart is empty. Try to add something.</p>}
+      {!!cartItems.length && (
+        <>
+        <div className="flex flex-start">
+          {cartItems.map((item) => (
+            <CartItem item={item} key={item.id}/> 
+          ))}
         </div>
-      ))}
-      Total - {totalPrice}
-      <Button variant="primary" onClick={handleShow}>Order</Button>
-      <OrderModal show={show} onClose={handleClose}/>
-    </>
+       
+        Total - {totalPrice}
+        <Button variant="primary" onClick={handleShow}>Order</Button>
+        <OrderModal show={show} onClose={handleClose}/>
+        </>
+      )}
+    </Container>
   )
 };
 

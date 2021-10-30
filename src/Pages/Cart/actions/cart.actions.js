@@ -2,13 +2,21 @@ import {
   ADD_QUANTITY, 
   REMOVE_FROM_CART, 
   ADD_TO_CART, 
-  SUB_QUANTITY 
+  SUB_QUANTITY, 
+  RESET_CART
 } from '../actionTypes/cart.actionTypes';
 
 export const addToCart = (item) => {
   return {
     type: ADD_TO_CART,
     item
+  }
+}
+
+
+export const resetCart = () => {
+  return {
+    type: RESET_CART
   }
 }
 
