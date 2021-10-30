@@ -21,7 +21,7 @@ const Cart = () => {
       {!cartItems.length && <p>Sorrt, your cart is empty. Try to add something.</p>}
       {!!cartItems.length && (
         <>
-        <div className="flex flex-start">
+        <div>
           {cartItems.map((item) => (
             <CartItem item={item} key={item.id}/> 
           ))}
