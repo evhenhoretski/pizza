@@ -92,7 +92,7 @@ const OrderModal = ({ onClose, show }) => {
       <Button variant="secondary" onClick={onClose}>
         Cancel
       </Button>
-      <Button variant="primary" onClick={onSaveClick}>
+      <Button className="button" onClick={onSaveClick}>
         Order
       </Button>
     </Modal.Footer>

@@ -13,18 +13,21 @@ const MenuItem = ({ item, onClick }) => {
   return (
     <Card className="mt-4 mb-4 flexItem">
       <Card.Img
-          variant="top"
-          src={item.img}
+        variant="top"
+        src={item.img}
+        className="menu-image"
       />
-      <Card.Body>
+      <Card.Body className="justify-between">
+        <div>
           <Card.Title>{item.name}</Card.Title>
-          <Card.Text>
-             {item.description}
-          </Card.Text>
-          <Card.Text>
-             {item.price}
-          </Card.Text>
-          <Button variant="secondary" onClick={handleClick}>Add to cart</Button>
+            <Card.Text>
+                {item.description}
+            </Card.Text>
+            <Card.Text>
+                {item.price}
+            </Card.Text>
+        </div>
+        <Button variant="secondary" onClick={handleClick} className="mt-2">Add to cart</Button>
       </Card.Body>
   </Card>
   )

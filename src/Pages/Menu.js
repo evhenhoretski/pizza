@@ -4,7 +4,6 @@ import { addToCart } from './Cart/actions/cart.actions';
 import {
   Container, Tab, Nav, Row, Col
 } from 'react-bootstrap';
-import NavDropdown from 'react-bootstrap/NavDropdown'
 import MenuItem from '../Components/MenuItem';
 
 import data from '../data.json';
@@ -26,6 +25,7 @@ const Menu = () => {
                              <Nav.Item key={item}>
                                 <Nav.Link
                                     eventKey={item}
+                                    className={categoryActive === item ? 'active-category' : ''}
                                     onClick={() => setCategoryActive(item)}
                                 >
                                     {item}

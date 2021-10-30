@@ -15,7 +15,7 @@ const Cart = () => {
   const totalPrice = useSelector(state => state.cartItems.total);
   return (
     <Container>
-      <div className="mb-4 ">
+      <div className="mb-4 mt-4 cart-title">
         Cart
       </div>
       {!cartItems.length && <p>Sorrt, your cart is empty. Try to add something.</p>}
@@ -26,9 +26,12 @@ const Cart = () => {
             <CartItem item={item} key={item.id}/> 
           ))}
         </div>
-       
-        Total - {totalPrice}
-        <Button variant="primary" onClick={handleShow}>Order</Button>
+        <div className="cart-button-wrapper">
+          <p className="cart-total">
+            Total - {totalPrice} uah
+          </p>
+          <Button className="button cart-button" onClick={handleShow}>Order</Button>
+        </div>
         <OrderModal show={show} onClose={handleClose}/>
         </>
       )}
