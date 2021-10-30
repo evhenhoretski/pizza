@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 
-import {useSelector} from 'react-redux';
-import {Nav, Row, Col, Card, Tab, Container} from 'react-bootstrap';
+import { useSelector } from 'react-redux';
+import { Row, Col, Tab, Container, Button } from 'react-bootstrap';
 import CartItem from '../../Components/CartItem';
+import OrderModal from '../../Components/OrderModal';
 
 
 const Cart = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   const cartItems = useSelector(state => state.cartItems.items);
   const totalPrice = useSelector(state => state.cartItems.total);
   return (
@@ -32,11 +37,12 @@ const Cart = () => {
                         </Col>
                     </Row>
                 </Tab.Container>
-            </Container>
-          {/*{item.name}*/}
+            </Container>      
         </div>
       ))}
       Total - {totalPrice}
+      <Button variant="primary" onClick={handleShow}>Order</Button>
+      <OrderModal show={show} onClose={handleClose}/>
     </>
   )
 };
