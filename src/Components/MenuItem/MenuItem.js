@@ -27,7 +27,7 @@ const MenuItem = ({ item, onClick }) => {
                 {item.price}
             </Card.Text>
         </div>
-        <Button variant="secondary" onClick={handleClick} className="mt-2">Add to cart</Button>
+        <Button onClick={handleClick} className="mt-2 button">Add to cart</Button>
       </Card.Body>
   </Card>
   )

@@ -25,7 +25,7 @@ const Menu = () => {
                              <Nav.Item key={item}>
                                 <Nav.Link
                                     eventKey={item}
-                                    className={categoryActive === item ? 'active-category' : ''}
+                                    className={`black-text ${categoryActive === item ? 'active-category' : ''}`}
                                     onClick={() => setCategoryActive(item)}
                                 >
                                     {item}

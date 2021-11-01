@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import AboutUs from '../Components/AboutUs';
 import CarouselBox from "../Components/CarouselBox";
 
 class Home extends Component {
@@ -6,7 +7,7 @@ class Home extends Component {
         return (
             <>
                 <CarouselBox/>
-
+                <AboutUs />
             </>
         );
     }
