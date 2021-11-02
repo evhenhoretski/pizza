@@ -25,10 +25,10 @@ const OrderModal = ({ onClose, show }) => {
   const isValid = Object.values(values).every(value => !!value);
   const onSaveClick = () => {
     if (!isValid) {
-      toast.error('Please, fill into ALL fields!');
+      toast.error('Будь ласка, заповність всі поля!');
       return;
     }
-    toast.success('Thank you! Manager will contact with you soon:)');
+    toast.success('Дякуємо! Менеджер скоро зателефонує вам:)');
     dispatch(resetCart());
     onClose();
     history.push('/menu');
@@ -37,27 +37,26 @@ const OrderModal = ({ onClose, show }) => {
   return (
     <Modal show={show} onHide={onClose}>
     <Modal.Header closeButton>
-      <Modal.Title>Contact Form</Modal.Title>
+      <Modal.Title>Контактна форма</Modal.Title>
     </Modal.Header>
     <Modal.Body>
       <Form>
         <Form.Group className="mb-3" controlId="name">
-          <Form.Label>Your name</Form.Label>
+          <Form.Label>Ім'я</Form.Label>
           <Form.Control 
             type="text" 
             name="name"
-            placeholder="Enter name" 
+            placeholder="Введіть ім'я"
             value={values.name}
             onChange={handleChange}
           />
         </Form.Group>
-
         <Form.Group className="mb-3" controlId="phone">
-          <Form.Label>Phone Number</Form.Label>
+          <Form.Label>Телефон</Form.Label>
           <Form.Control 
             type="text" 
             name="phone"
-            placeholder="Enter phone"
+            placeholder="Введіть телефон"
             value={values.phone}
             onChange={handleChange}
           />
@@ -65,21 +64,21 @@ const OrderModal = ({ onClose, show }) => {
         <Form.Group className="mb-3" controlId="shipping">
           <Row>
             <Col> 
-              <Form.Label>Street</Form.Label>
+              <Form.Label>Вулиця</Form.Label>
               <Form.Control 
                 type="text" 
                 name="street"
-                placeholder="Enter street"
+                placeholder="Введіть вулицю"
                 value={values.street}
                 onChange={handleChange}
               />
             </Col>
             <Col>
-              <Form.Label>House number</Form.Label>
+              <Form.Label>Номер будинку</Form.Label>
               <Form.Control 
                 type="text" 
                 name="house"
-                placeholder="Enter house number"
+                placeholder="Введіть номер будинку"
                 value={values.house}
                 onChange={handleChange}
               />
@@ -90,10 +89,10 @@ const OrderModal = ({ onClose, show }) => {
     </Modal.Body>
     <Modal.Footer>
       <Button variant="secondary" onClick={onClose}>
-        Cancel
+        Скасувати
       </Button>
       <Button className="button" onClick={onSaveClick}>
-        Order
+        Замовити
       </Button>
     </Modal.Footer>
   </Modal>

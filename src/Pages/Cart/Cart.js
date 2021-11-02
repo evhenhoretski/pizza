@@ -24,7 +24,7 @@ const Cart = () => {
   return (
     <Container>
       <div className="mb-4 mt-4 about-title">
-        Cart
+        Корзина
       </div>
       {!cartItems.length && (
         <>
@@ -44,9 +44,9 @@ const Cart = () => {
         </div>
         <div className="cart-button-wrapper">
           <p className="cart-total">
-            Total - {totalPrice} грн
+            Загальна сума - {totalPrice} грн
           </p>
-          <Button className="button cart-button" onClick={handleShow}>Order</Button>
+          <Button className="button cart-button" onClick={handleShow}>Замовити</Button>
         </div>
         <OrderModal show={show} onClose={handleClose}/>
         </>

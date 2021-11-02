@@ -22,7 +22,7 @@ const Header = () => {
                             className="d-inline-block align-top"
                             alt="Logo"
                         />
-                        <p className="logo">Pizza</p>
+                        <p className="logo">Мамасіта-Піца</p>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" className="flex-right">
@@ -32,14 +32,14 @@ const Header = () => {
                                 className="header-link" 
                                 activeClassName="header-link-active"
                             > 
-                                Menu 
+                                Меню
                             </NavLink>
                             <NavLink 
                                 to="/cart" 
                                 className="header-link"
                                 activeClassName="header-link-active"
                             >
-                                Cart 
+                                Замовлення
                                 {!!cartItems.length && <span> ({cartItems.length})</span>}
                             </NavLink>
                         </Nav>

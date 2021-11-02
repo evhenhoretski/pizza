@@ -20,8 +20,8 @@ const CarouselBox = () => {
                     alt="Pizza"
                 />
                 <Carousel.Caption>
-                    <h3 className="about-text">Тут текст про знижку</h3>
-                    <p className="about-desc">Тут деталі знижки</p>
+                    <h3 className="about-text">Хелловінські знижки</h3>
+                    <p className="about-desc">-50%</p>
                     <Button className="button mb-4" onClick={handleClick}>Перейти в меню</Button>
                 </Carousel.Caption>
             </CarouselItem>

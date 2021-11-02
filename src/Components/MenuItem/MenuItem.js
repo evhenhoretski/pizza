@@ -7,7 +7,7 @@ import {
 const MenuItem = ({ item, onClick }) => {
   const handleClick = () => {
     onClick(item);
-    toast.success(`${item.name} was added to cart!`)
+    toast.success(`${item.name} добавлено в корзину!`)
   };
 
   return (
@@ -28,7 +28,7 @@ const MenuItem = ({ item, onClick }) => {
                 {item.wallet}
             </Card.Text>
         </div>
-        <Button onClick={handleClick} className="mt-2 button">Add to cart</Button>
+        <Button onClick={handleClick} className="mt-2 button">Добавити в корзину</Button>
       </Card.Body>
   </Card>
   )
