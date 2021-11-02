@@ -33,7 +33,8 @@ const CartItem = ({ item }) => {
       </Col>
       <Col xs="2">
         <Card.Text>
-            {item.price} uah
+            {item.price}
+            {item.wallet}
         </Card.Text>
       </Col>
       <Col xs="2">

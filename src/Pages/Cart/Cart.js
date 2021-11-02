@@ -44,7 +44,7 @@ const Cart = () => {
         </div>
         <div className="cart-button-wrapper">
           <p className="cart-total">
-            Total - {totalPrice} uah
+            Total - {totalPrice} грн
           </p>
           <Button className="button cart-button" onClick={handleShow}>Order</Button>
         </div>

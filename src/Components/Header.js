@@ -5,7 +5,7 @@ import {
     Nav,
     Container
 } from 'react-bootstrap'
-import logo from './logo192.png'
+import logo from './logo.png'
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -17,8 +17,8 @@ const Header = () => {
                     <Navbar.Brand href="/" className="logo-wrapper">
                         <img
                             src={logo}
-                            height="30"
-                            width="30"
+                            height="50"
+                            width="50"
                             className="d-inline-block align-top"
                             alt="Logo"
                         />
